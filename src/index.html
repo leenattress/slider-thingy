@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="module" src="/build/slick-slider.esm.js"></script>
+    <script nomodule src="/build/slick-slider.js"></script>
+  </head>
+  <body>
+    <wc-slider id="wcslider"></wc-slider>
+
+    <script>
+      const wcSlider = document.getElementById('wcslider');
+      wcSlider.config = {
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      };
+      wcSlider.contentData = [
+        {
+          url: 'https://www.workcast.com/?cpak=9771734449388486&pak=1206159354237668',
+          imgSrc: '//glc2.workcast.com/clusterSVCFS1/NAS/OnDemand/10926/9809705379474468/Images/10926_2020811162952_banner_webinars_110820_10926_20200811042952304.png',
+          alt: 'First alt',
+        },
+        {
+          url: 'https://www.workcast.com/?cpak=9771734449388486&pak=5131615458398228',
+          imgSrc: '//glc2.workcast.com/clusterSVCFS1/NAS/OnDemand/10926/9809705379474468/Images/10926_2020716114518_banner_agenda_10926_20200716114518599.png',
+          alt: '',
+        },
+        {
+          url: 'https://www.workcast.com/?cpak=9771734449388486&pak=8625554333948022',
+          imgSrc: '//glc2.workcast.com/clusterSVCFS1/NAS/OnDemand/10926/9809705379474468/Images/10926_2020716114531_banner_lounge_10926_20200716114531665.png',
+          alt: '',
+        },
+        {
+          url: 'https://www.workcast.com/?cpak=9771734449388486&pak=2527892039296691',
+          imgSrc: '//glc2.workcast.com/clusterSVCFS1/NAS/OnDemand/10926/9809705379474468/Images/10926_2020716114551_banner_sponsor_10926_20200716114551291.png',
+          alt: '',
+        },
+      ];
+    </script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </body>
+</html>
