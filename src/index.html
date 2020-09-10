@@ -14,9 +14,14 @@
 
         // https://glidejs.com/docs/options/
         wcSlider.config = {
-          type: 'carousel',
+          type: 'slider',
           startAt: 0,
-          perView: 3,
+          perView: 4,
+          breakpoints: {
+            800: {
+              perView: 2,
+            },
+          },
         };
         wcSlider.contentData = [
           {
